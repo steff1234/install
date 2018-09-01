@@ -285,11 +285,11 @@ cat >> /home/$USER/scripts/slet.sh <<EOF
 
 
 # remove empty directories
-find /home/$USER/mnt/move/Movies* -empty -type d -delete 2>/dev/null
-find /home/$USER/mnt/move/Tv* -empty -type d -delete 2>/dev/null
-find /home/$USER/mnt/move/Unsorted* -empty -type d -delete 2>/dev/null
-find /home/$USER/mnt/move/Movies-Dansk* -empty -type d -delete 2>/dev/null
-find /home/$USER/mnt/move/Tv-Dansk* -empty -type d -delete 2>/dev/null
+find /home/$USER/mnt/move/movies* -empty -type d -delete 2>/dev/null
+find /home/$USER/mnt/move/tv* -empty -type d -delete 2>/dev/null
+find /home/$USER/mnt/move/unsorted* -empty -type d -delete 2>/dev/null
+find /home/$USER/mnt/move/movies 4K* -empty -type d -delete 2>/dev/null
+find /home/$USER/mnt/move/Tv 4K* -empty -type d -delete 2>/dev/null
 find /home/$USER/mnt/move/.Trash-1000/* -empty -type d -delete 2>/dev/null
 
 EOF
