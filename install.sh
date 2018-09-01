@@ -114,7 +114,7 @@ which filebot >/dev/null 2>&1 || wget https://get.filebot.net/filebot/FileBot_4.
 dpkg -i FileBot_4.8.2_amd64.deb 1>/dev/null 2>&1
 echo "****** Tryk Enter *******"
 ## MediaInfo
-sudo apt install mediainfo
+sudo apt -y install mediainfo 1>/dev/null 2>&1
 
 ## Qbittorrent 
 echo "*** Installer Qbittorrent"
