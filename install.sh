@@ -66,7 +66,7 @@ sudo -u $USER chmod a+x /home/$USER/scripts/{rclone-upload.sh,slet.sh}
 
 ## Installer unzip og fuse MATE Qbittorrent NoMachine plex 
  
-read -p "   **Installer** **Mate Desktop** **NoMachine** **FileBot** **Qbittorrent** **Rclone** **MegerFs** **Fuse** **Curl** **Unzip** | Tryk Enter For Og Komme Videre!"
+read -p "   **Installer** **Mate Desktop** **Plex** **NoMachine** **FileBot** **Qbittorrent** **Rclone** **MegerFs** **Fuse** **Curl** **Unzip** | Tryk Enter For Og Komme Videre!"
 
 ## Update Upgrade
 echo "***Update og Upgrade" 
@@ -119,7 +119,7 @@ sudo apt install mediainfo
 ## Qbittorrent 
 echo "*** Installer Qbittorrent"
 sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable -y
-sudo apt-get update && sudo apt-get -y install qbittorrent
+sudo apt-get update && sudo apt-get -y install qbittorrent 1>/dev/null 2>&1
 
 
 ## Plex
