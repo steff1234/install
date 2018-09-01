@@ -128,6 +128,9 @@ echo "*** Installer PlexMediaServer"
 wget https://downloads.plex.tv/plex-media-server/1.13.5.5332-21ab172de/plexmediaserver_1.13.5.5332-21ab172de_amd64.deb 1>/dev/null 2>&1
 dpkg -i plexmediaserver_1.13.5.5332-21ab172de_amd64.deb 1>/dev/null 2>&1
 
+## installer chromium-browser
+sudo apt -y install chromium-browser 1>/dev/null 2>&1
+
 
 ## Installer Megerfs
 echo "*** Installer MergerFs"
