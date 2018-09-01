@@ -118,7 +118,7 @@ sudo apt -y install mediainfo 1>/dev/null 2>&1
 
 ## Qbittorrent 
 echo "*** Installer Qbittorrent"
-sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable -y
+sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable -y 1>/dev/null 2>&1
 sudo apt-get update && sudo apt-get -y install qbittorrent 1>/dev/null 2>&1
 
 
