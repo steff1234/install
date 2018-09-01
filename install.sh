@@ -75,8 +75,9 @@ sudo apt update -y && sudo apt upgrade -y
 
 ## Mate
 echo "Installer Mate desktop tager lidt tid"
-sudo -s apt install -y ubuntu-mate-desktop 
-
+sudo apt-add-repository ppa:ubuntu-mate-dev/xenial-mate -y 1>/dev/null 2>&1
+sudo apt -y update && sudo apt -y install mate
+sudo apt -y dist-upgrade
 
 ## NoMachine
 echo "***Installer NoMachine"
