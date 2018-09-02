@@ -11,7 +11,7 @@ echo "Installer  Qbittorrent?"
 
 select answer in "Yes" "No"; do
     case $answer in
-        Yes ) echo "Installer Qbittorrent" && $a 1>/dev/null 2>&1;$b1>/dev/null 2>&1;$c 1>/dev/null 2>&1; sudo ./Plex.sh;;
+        Yes ) echo "Installer Qbittorrent" && $a 1>/dev/null 2>&1;$b 1>/dev/null 2>&1;$c 1>/dev/null 2>&1; sudo ./Plex.sh;;
          No ) echo "NO" & sudo ./Plex.sh;;
           * ) echo "Please answer yes or no.";;
     esac
