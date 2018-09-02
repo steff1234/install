@@ -2,10 +2,6 @@
 chmod +x unzip.sh
 
 
-
-
-sudo apt -y install curl 1>/dev/null 2>&1
-
 echo "Installer  Curl?"
 
 
