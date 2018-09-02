@@ -66,71 +66,95 @@ sudo -u $USER chmod a+x /home/$USER/scripts/{rclone-upload.sh,slet.sh}
 
 ## Installer unzip og fuse MATE Qbittorrent NoMachine plex 
  
-read -p "   **Installer** **Mate Desktop** **Plex** **NoMachine** **FileBot** **Qbittorrent** **Rclone** **MegerFs** **Fuse** **Curl** **Unzip** | Tryk Enter For Og Komme Videre!"
+read -p "   ** Installer Programmer ** | Tryk Enter For Og Komme Videre!"
 
 ## Update Upgrade
 echo "***Update og Upgrade" 
 sudo apt update -y && sudo apt upgrade -y
-
-
+clear
 ## Mate
+echo Vil du installer Mate desktop? "(Y or N)"
+
+read x
+# now check if $x is "y"
+if [ "$x" = "y" ]; then
 echo "Installer Mate desktop tager lidt tid"
 sudo apt-add-repository ppa:ubuntu-mate-dev/xenial-mate -y 1>/dev/null 2>&1
-sudo apt -y update && sudo apt -y install mate
-sudo apt -y dist-upgrade
-
+sudo apt -y update && sudo apt -y install mate 1>/dev/null 2>&1
+sudo apt -y dist-upgrade  1>/dev/null 2>&1  
+fi
+clear
 ## NoMachine
-echo "***Installer NoMachine"
+echo Vil du installer NoMachine? "(Y or N)"
+
+read q
+# now check if $q is "y"
+if [ "$q" = "y" ]; then
+echo "Installer NoMachine"
 cd /home/$USER/mergerfs 1>/dev/null 2>&1
 which nomachine >/dev/null 2>&1 || wget https://download.nomachine.com/download/6.2/Linux/nomachine_6.2.4_1_amd64.deb 1>/dev/null 2>&1
-sudo dpkg -i nomachine_6.2.4_1_amd64.deb
+sudo dpkg -i nomachine_6.2.4_1_amd64.deb 1>/dev/null 2>&1
 rm nomachine*.deb
 cd 1>/dev/null 2>&1
-
-
+fi
+clear
 ## Curl
+
 echo "*** Checking curl"
 which curl >/dev/null 2>&1 || apt -y install curl 1>/dev/null 2>&1
-
 
 ## Unzip
 echo "*** Checking unzip"
 witch unzip >/dev/null 2>&1 || apt -y install unzip 1>/dev/null 2>&1
 
-
 ## Rclone
 echo "*** Checking Rclone"
 which rclone >/dev/null 2>&1 || curl https://rclone.org/install.sh | sudo bash 1>/dev/null 2>&1
-
 
 ## Fuse
 echo "*** Checking fuse support"
 which fuse >/dev/null 2>&1 || apt -y install fuse 1>/dev/null 2>&1
 
-
 ## Filebot
-echo "*** Installer Filebot"
+echo Vil du installer FileBot? "(Y or N)"
+
+read w
+# now check if $w is "y"
+if [ "$w" = "y" ]; then
+echo "Installer FileBot"
 cd /home/$USER/mergerfs 1>/dev/null 2>&1
 which filebot >/dev/null 2>&1 || wget https://get.filebot.net/filebot/FileBot_4.8.2/FileBot_4.8.2_amd64.deb 1>/dev/null 2>&1
 dpkg -i FileBot_4.8.2_amd64.deb 1>/dev/null 2>&1
 echo "****** Tryk Enter *******"
 ## MediaInfo
 sudo apt -y install mediainfo 1>/dev/null 2>&1
-
+fi
+clear
 ## Qbittorrent 
-echo "*** Installer Qbittorrent"
+echo Vil du installer Qbittorrent? "(Y or N)"
+
+read e
+# now check if $e is "y"
+if [ "$e" = "y" ]; then
+echo "Installer Qbittorrent"
 sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable -y 1>/dev/null 2>&1
 sudo apt-get update && sudo apt-get -y install qbittorrent 1>/dev/null 2>&1
-
-
+fi
+clear
 ## Plex
-echo "*** Installer PlexMediaServer"
+
+echo Vil du installer Plex? "(Y or N)"
+
+read r
+# now check if $r is "y"
+if [ "$r" = "y" ]; then
+echo "Installer Plex"
 wget https://downloads.plex.tv/plex-media-server/1.13.5.5332-21ab172de/plexmediaserver_1.13.5.5332-21ab172de_amd64.deb 1>/dev/null 2>&1
 dpkg -i plexmediaserver_1.13.5.5332-21ab172de_amd64.deb 1>/dev/null 2>&1
-
+fi
+clear
 ## installer chromium-browser
 sudo apt -y install chromium-browser 1>/dev/null 2>&1
-
 
 ## Installer Megerfs
 echo "*** Installer MergerFs"
