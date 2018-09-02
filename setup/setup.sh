@@ -7,7 +7,7 @@
 
 read -p 'Username: ' uservar
 echo
-echo Nu vi klar $uservar
+echo Er du kalr $uservar
 
 # Set User Groups Og Rclone Info
 USER=$uservar
