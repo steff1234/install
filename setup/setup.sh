@@ -211,7 +211,7 @@ EOF
 
 cat >> /etc/crontab << EOF
 * * * * * $USER /home/$USER/scripts/rclone-upload.sh
-* * * * * $USER /home/$USER/scripts/slet.sh
+0 * * * * $USER /home/$USER/scripts/slet.sh
 EOF
 
 #######################################################################
