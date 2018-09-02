@@ -168,8 +168,12 @@ EOF
 echo -e "#!/bin/bash\nLOGFILE=/home/$USER/scripts/logs/rclone-upload.log\nFROM=/home/$USER/mnt/move\nTO=gcrypt:/" >> /home/$USER/scripts/rclone-upload.sh 
 
 ## Rclone Upload Scripts
-
 cat >> /home/$USER/scripts/rclone-upload.sh << 'EOF'
+
+
+
+
+
 if pidof -o %PPID -x "$0"; then
    exit 1
 fi
