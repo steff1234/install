@@ -222,7 +222,7 @@ systemctl enable rclonemount.service
 systemctl start rclonemount.service
 
 ## Start megerfs Mount
-rm install.sh
+rm -rf install
 systemctl enable mergerfs.service
 systemctl start mergerfs.service
 ## Reboot
