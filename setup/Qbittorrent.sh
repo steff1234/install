@@ -3,7 +3,7 @@
 chmod +x ./Plex.sh
 
 a='sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable -y'
-b='sudo apt-get update 1>/dev/null 2>&1' 
+b='sudo apt-get -y update 1>/dev/null 2>&1' 
 c='sudo apt-get -y install qbittorrent'
 
 
