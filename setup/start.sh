@@ -8,8 +8,8 @@ c='sudo apt -y dist-upgrade'
 d='sudo apt -y install mate'
 e='sudo apt -y install chromium-browser'
 f='sudo add-apt-repository ppa:notepadqq-team/notepadqq -y'
-g='sudo apt-get update'
-h='sudo apt-get install notepadqq'
+g='sudo apt-get -y update'
+h='sudo apt-get -y install notepadqq'
 
 echo "Installer  Mate desktop?"
 
