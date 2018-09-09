@@ -4,8 +4,8 @@ chmod +x curl.sh
 
 a='sudo apt-add-repository ppa:ubuntu-mate-dev/xenial-mate -y'
 b='sudo apt -y update' 
-c='sudo apt -y dist-upgrade'
-d='sudo apt -y install mate'
+d='sudo apt -y dist-upgrade'
+c='sudo apt -y install mate'
 e='sudo apt -y install chromium-browser'
 f='sudo add-apt-repository ppa:notepadqq-team/notepadqq -y'
 g='sudo apt-get -y update'
